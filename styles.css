@@ -11,8 +11,6 @@ header {
     padding: 10px;
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
 }
 
 header img {
@@ -35,12 +33,11 @@ nav li a {
     color: #ffffff;
     padding: 14px 16px;
     text-decoration: none;
-    display: inline-block;
 }
 
 main {
+    margin-top: 70px;
     margin-bottom: 70px;
-    height: 3000px;
 }
 
 /* Foto y presentación */
