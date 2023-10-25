@@ -2,7 +2,9 @@ body {
     margin: 0;
     background-color: #202020;
     color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
 }
+
 header {
     background-color: #292929;
     height: 60px;
@@ -10,12 +12,15 @@ header {
     display: flex;
     align-items: center;
 }
+
 header img {
     height: 50px;
 }
+
 nav {
     flex-grow: 1;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -23,17 +28,17 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
+
 nav li a {
+    color: #ffffff;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 main {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 70px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 70px; /* Ajusta este valor según tus necesidades */
 }
-
-/* Foto y presentación */
 
 .presentation {
     text-align: center;
@@ -43,9 +48,6 @@ main {
     border-radius: 50%;
 }
 
-/* Foto y presentación */
-
-}
 footer {
     background-color: #292929;
     text-align: center;
