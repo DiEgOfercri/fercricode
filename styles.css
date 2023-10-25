@@ -9,6 +9,8 @@ header {
     padding: 10px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 header img {
     height: 50px;
@@ -27,6 +29,24 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+main {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* Foto y presentación */
+
+.presentation {
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+/* Foto y presentación */
+
 footer {
     background-color: #292929;
     text-align: center;
