@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #202020;
+    color: #ffffff;
+}
+header {
+    background-color: #292929;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 50px;
+}
+nav {
+    flex-grow: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+footer {
+    background-color: #292929;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
