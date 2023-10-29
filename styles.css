@@ -3,41 +3,36 @@ body {
     background-color: #202020;
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.6vw;
+    height: 0.6vw;
+    background: linear-gradient(#dd41f6,#4cdbff);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #404040;
 }
 
 * {
     box-sizing: border-box;
 }
 
-#navbar {
-    display: flex; /* Agregamos Flexbox para distribución horizontal */
-    justify-content: space-between; /* Espaciado igual entre elementos */
-    align-items: start; /* Centra verticalmente los elementos */
-    width: 100%;
-    position: fixed;
-}
-
 #mini-menu {
-    flex: 0 0 auto; /* Evita que el mini-menu se expanda */
     margin: 10px;
     position: sticky;
     top: 10px;
     height: 94px;
-    width: fit-content;
+    width: 165px;
 }
 
 #logo {
+    float: left;
     border-radius: 7px;
     background-color: #292929;
     height: 70px;
-    margin-bottom: 6px;
-}
-
-#logo:hover {
-    border-radius: 7px;
-    background-color: #353535;
-    height: 70px;
-    margin-bottom: 6px;
 }
 
 #logo img {
@@ -46,38 +41,32 @@ body {
 }
 
 #up {
-    float: left;
     border-radius: 7px;
     background-color: #292929;
     width: 49%;
     height: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 51%;
 }
 
-#up:hover {
-    float: left;
-    border-radius: 7px;
-    background-color: #353535;
-    width: 49%;
-    height: fit-content;
+#up a {
+    text-decoration: none;
+    padding: 40%;
+    color: #ffffff;
 }
 
 #down {
-    float: right;
     border-radius: 7px;
     background-color: #292929;
     width: 49%;
     height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 51%;
 }
 
-#down:hover {
-    float: right;
-    border-radius: 7px;
-    background-color: #353535;
-    width: 49%;
-    height: fit-content;
-}
-
-#up a, #down a {
+#down a {
     text-decoration: none;
     padding: 40%;
     color: #ffffff;
@@ -109,7 +98,7 @@ nav li a {
 }
 
 main {
-    margin-bottom: 70px; /* Ajusta este valor según tus necesidades */
+    margin-bottom: 70px;
 }
 
 .presentation {
