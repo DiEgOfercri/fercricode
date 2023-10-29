@@ -5,16 +5,68 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-header {
-    background-color: #292929;
-    height: 60px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
+* {
+    box-sizing: border-box;
 }
 
-header img {
-    height: 50px;
+#mini-menu {
+    margin: 10px;
+    position: sticky;
+    top: 10px;
+    height: 94px;
+    width: fit-content;
+}
+
+#logo {
+    float: left;
+    border-radius: 7px;
+    background-color: #292929;
+    height: 70px;
+}
+
+#logo img {
+    padding: 10px;
+    height: 100%;
+}
+
+#up {
+    border-radius: 7px;
+    background-color: #292929;
+    width: 49%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 51%;
+}
+
+#up a {
+    text-decoration: none;
+    padding: 40%;
+    color: #ffffff;
+}
+
+#down {
+    border-radius: 7px;
+    background-color: #292929;
+    width: 49%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+}
+
+#down a {
+    text-decoration: none;
+    padding: 40%;
+    color: #ffffff;
+}
+
+
+header {
+    background-color: #292929;
+    padding: 8px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -31,7 +83,6 @@ nav ul {
 
 nav li a {
     color: #ffffff;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -51,7 +102,6 @@ main {
 footer {
     background-color: #292929;
     text-align: center;
-    padding: 10px;
     position: fixed;
     left: 0;
     bottom: 0;
