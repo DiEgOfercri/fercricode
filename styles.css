@@ -20,19 +20,56 @@ body {
     box-sizing: border-box;
 }
 
+#navbar {
+    display: flex; /* Agregamos Flexbox para distribución horizontal */
+    justify-content: space-between; /* Espaciado igual entre elementos */
+    align-items: start; /* Centra verticalmente los elementos */
+    width: 100%;
+    position: fixed;
+}
+
 #mini-menu {
+    flex: 0 0 auto; /* Evita que el mini-menu se expanda */
     margin: 10px;
-    position: sticky;
-    top: 10px;
-    height: 94px;
-    width: 165px;
+}
+
+.navbutton {
+    flex: 1; /* Ocupa todo el espacio disponible excepto el mini-menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    margin-top: 10px;
+    height: 40px;
+}
+.navbutton:hover {
+    flex: 1; /* Ocupa todo el espacio disponible excepto el mini-menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    height: 40px;
+    color: linear-gradient(#dd41f6,#4cdbff);
+}
+
+.navbutton a {
+    color: #ffffff;
+    padding: 10px 170px;
+    text-decoration: none;
 }
 
 #logo {
     border-radius: 7px;
     background-color: #292929;
     height: 70px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+#logo:hover {
+    border-radius: 7px;
+    background-color: #353535;
+    height: 70px;
+    margin-bottom: 6px;
 }
 
 #logo img {
@@ -48,10 +85,12 @@ body {
     height: fit-content;
 }
 
-#up a {
-    text-decoration: none;
-    padding: 40%;
-    color: #ffffff;
+#up:hover {
+    float: left;
+    border-radius: 7px;
+    background-color: #353535;
+    width: 49%;
+    height: fit-content;
 }
 
 #down {
@@ -62,35 +101,18 @@ body {
     height: fit-content;
 }
 
-#down a {
+#down:hover {
+    float: right;
+    border-radius: 7px;
+    background-color: #353535;
+    width: 49%;
+    height: fit-content;
+}
+
+#up a, #down a {
     text-decoration: none;
     padding: 40%;
     color: #ffffff;
-}
-
-
-header {
-    background-color: #292929;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    flex-grow: 1;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav li a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 main {
@@ -104,6 +126,7 @@ main {
 .presentation img {
     width: 18%;
     margin-bottom: 20px;
+    margin-top: 80px;
 }
 
 .presentation p {
