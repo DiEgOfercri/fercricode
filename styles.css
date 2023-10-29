@@ -3,17 +3,6 @@ body {
     background-color: #202020;
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 0.6vw;
-    height: 0.6vw;
-    background: linear-gradient(#dd41f6,#4cdbff);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #404040;
 }
 
 * {
@@ -31,31 +20,10 @@ body {
 #mini-menu {
     flex: 0 0 auto; /* Evita que el mini-menu se expanda */
     margin: 10px;
-}
-
-.navbutton {
-    flex: 1; /* Ocupa todo el espacio disponible excepto el mini-menu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #292929;
-    margin-top: 10px;
-    height: 40px;
-}
-.navbutton:hover {
-    flex: 1; /* Ocupa todo el espacio disponible excepto el mini-menu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #353535;
-    height: 40px;
-    color: linear-gradient(#dd41f6,#4cdbff);
-}
-
-.navbutton a {
-    color: #ffffff;
-    padding: 10px 170px;
-    text-decoration: none;
+    position: sticky;
+    top: 10px;
+    height: 94px;
+    width: fit-content;
 }
 
 #logo {
@@ -115,6 +83,31 @@ body {
     color: #ffffff;
 }
 
+
+header {
+    background-color: #292929;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 main {
     margin-bottom: 70px; /* Ajusta este valor según tus necesidades */
 }
@@ -126,7 +119,6 @@ main {
 .presentation img {
     width: 18%;
     margin-bottom: 20px;
-    margin-top: 80px;
 }
 
 .presentation p {
