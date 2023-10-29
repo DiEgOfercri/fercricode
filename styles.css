@@ -29,10 +29,10 @@ body {
 }
 
 #logo {
-    float: left;
     border-radius: 7px;
     background-color: #292929;
     height: 70px;
+    margin-bottom: 4px;
 }
 
 #logo img {
@@ -41,13 +41,11 @@ body {
 }
 
 #up {
+    float: left;
     border-radius: 7px;
     background-color: #292929;
     width: 49%;
     height: fit-content;
-    position: absolute;
-    bottom: 0;
-    right: 51%;
 }
 
 #up a {
@@ -57,13 +55,11 @@ body {
 }
 
 #down {
+    float: right;
     border-radius: 7px;
     background-color: #292929;
     width: 49%;
     height: fit-content;
-    position: absolute;
-    bottom: 0;
-    left: 51%;
 }
 
 #down a {
